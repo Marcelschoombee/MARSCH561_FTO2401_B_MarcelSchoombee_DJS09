@@ -2,6 +2,7 @@ const returningUserDisplay = document.querySelector('#returning-user')
 const userNameDisplay = document.querySelector('#user')
 const reviewTotalDisplay = document.querySelector('#reviews')
 import { LoyaltyUser } from './enums'
+import { Review } from './interfaces'
 // Number Types and String type
 // Boolean type
 export function showReviewTotal (value : number, reviewer: string, isLoyalty : LoyaltyUser) {
@@ -23,12 +24,7 @@ export function makeMultiple(value: number) : string {
     } else return ''
 }
 
-export function getTopTwoReviews(reviews: {
-    name: string;
-    stars: number;
-    loyalyuser: LoyaltyUser;
-    date: string;
-}[]) : {
+export function getTopTwoReviews(reviews : Review[]) : Review[] {
     name: string;
     stars: number;
     loyalyuser: LoyaltyUser;

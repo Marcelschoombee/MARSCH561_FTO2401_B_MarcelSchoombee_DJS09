@@ -3,11 +3,12 @@ const propertyContainer = document.querySelector('.properties')
 import { Permissions, LoyaltyUser } from './enums'
 import { showReviewTotal, populateUser } from './utils'
 import { Price, Country } from './types'
+import { Review } from './interfaces'
 
 let isOpen: boolean
 
 
-const reviews : any[] = [
+const reviews : Review[] = [
 
     {
         name: 'Sheia',
@@ -135,12 +136,7 @@ let currentLocation: [string, string, number] = ['Cape Town', '11:35', 17]
 footer.innerHTML = currentLocation[0] + ' ' + currentLocation[1] + ' ' + currentLocation[2] + '°'
 
 let count = 0
-function addReviews(array: {
-    name: string;
-    stars: number;
-    loyaltyUser: LoyaltyUser;
-    date: string;
-}[] ) : void  {
+function addReviews(array: Review[] ) : void  {
     if (!count ) {
         count++
         const topTwo = getTopTwoReviews(array)
