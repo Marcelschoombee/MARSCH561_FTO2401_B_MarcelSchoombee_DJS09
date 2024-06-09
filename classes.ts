@@ -1,6 +1,6 @@
 import { Review } from './interfaces'
 
-export class MainProperty {
+export default class MainProperty {
     src: string
     title: string
     reviews: Review[]
