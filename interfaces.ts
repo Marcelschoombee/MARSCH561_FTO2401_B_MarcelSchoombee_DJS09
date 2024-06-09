@@ -1,6 +1,6 @@
 import { LoyaltyUser } from './enum'
 
-export interface Review {
+export default interface Review {
     name: string;
     stars: number;
     loyaltyUser: LoyaltyUser;

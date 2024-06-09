@@ -3,7 +3,7 @@ const propertyContainer = document.querySelector('.properties')
 import { Permissions, LoyaltyUser } from './enums'
 import { showReviewTotal, populateUser } from './utils'
 import { Price, Country } from './types'
-import { Review } from './interfaces'
+import  Review  from './interfaces'
 
 let isOpen: boolean
 
