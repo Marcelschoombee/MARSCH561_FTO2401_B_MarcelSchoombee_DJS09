@@ -22,10 +22,11 @@ const reviews = [
     },
 ]
 
-// Number Types
+// Number Types and String type
 
-function showReviewTotal (value : number) {
-    reviewTotalDisplay.innerHTML = value.toString()
+function showReviewTotal (value : number, reviewer: string) {
+    reviewTotalDisplay.innerHTML = 'Review total' + value.toString() + '| last reviewed by ' + 
+    reviewer
 }
 
-showReviewTotal(reviews.length)
+showReviewTotal(reviews.length, reviews[0].name)
