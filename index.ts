@@ -23,10 +23,11 @@ const reviews = [
 ]
 
 // Number Types and String type
-
-function showReviewTotal (value : number, reviewer: string) {
+// Boolean type
+function showReviewTotal (value : number, reviewer: string, isLoyalty : boolean) {
+    const iconDisplay = isLoyalty ? '⭐' : ''
     reviewTotalDisplay.innerHTML = 'Review total' + value.toString() + '| last reviewed by ' + 
-    reviewer
+    reviewer + iconDisplay
 }
 
-showReviewTotal(reviews.length, reviews[0].name)
+showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
