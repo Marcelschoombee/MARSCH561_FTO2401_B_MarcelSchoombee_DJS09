@@ -2,6 +2,7 @@ const propertyContainer = document.querySelector('.properties')
 
 import { Permissions, LoyaltyUser } from './enums'
 import { showReviewTotal, populateUser } from './utils'
+import { Price, Country } from './types'
 
 let isOpen: boolean
 
@@ -54,7 +55,7 @@ const properties : {
         firstLine: string;
         city: string;
         code: number;
-        country: string;
+        country: Country;
     };
     contact: [number, string];
     isAvailable: boolean;
