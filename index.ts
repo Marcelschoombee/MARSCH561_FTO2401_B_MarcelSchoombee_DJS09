@@ -57,7 +57,7 @@ const properties : {
         code: number;
         country: string;
     };
-    contact: string;
+    contact: [number, string];
     isAvailable: boolean;
 }[] = [
      {image: 'images/colombia-property.jpg',
@@ -69,7 +69,7 @@ const properties : {
             code: 45632,
             country: 'Colombia'
         },
-        contact: 'marywinkle@gmail.com',
+        contact: [+1123495082908, 'marywinkle@gmail.com'],
         isAvailable: true  
     },
     {
@@ -82,7 +82,7 @@ const properties : {
             code: 343903,
             country: 'Poland'
         },
-        contact: 'garydavis@hotmail.com',
+        contact: [+1123495082908, 'garydavis@hotmail.com'],
         isAvailable: false 
     },
         {
@@ -95,7 +95,7 @@ const properties : {
             code: 35433,
             country: 'United Kingdom',
         },
-        contact: 'andyluger@aol.com',
+        contact: [ +1123495082908, 'andyluger@aol.com'],
         isAvailable: true
     }
         
@@ -115,3 +115,7 @@ for (let i = 0; i < properties.length; i++) {
     card.appendChild(image)
     propertyContainer.appendChild(card)
 }
+
+let currentLocation: [string, string, number] = ['Cape Town', '11:35', 17]
+footer.innerHTML = currentLocation[0] + ' ' + currentLocation[1] + ' ' + currentLocation[2] + '°'
+
