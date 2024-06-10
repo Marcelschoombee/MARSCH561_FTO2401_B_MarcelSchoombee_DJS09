@@ -1,4 +1,4 @@
-import { LoyaltyUser } from './enums'
+import { LoyaltyUser } from './enum'
 import { Price, Country } from './types'
 
 export interface Review {
