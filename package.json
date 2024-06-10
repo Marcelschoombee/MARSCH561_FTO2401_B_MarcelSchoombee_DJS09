@@ -4,8 +4,15 @@
   "description": "Are you ready to get stuck into some Typescript? For this challenge, you are required to code along with the lecturer from this lesson:  Couch Surfing Website",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack -w",
+    "build": "webpack"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack-cli": "^5.1.4"
+  }
 }
