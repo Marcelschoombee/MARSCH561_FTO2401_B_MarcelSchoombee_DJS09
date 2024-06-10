@@ -1,0 +1,11 @@
+{
+  "name": "marsch561_fto2401_b_marcelschoombee_djs09",
+  "version": "1.0.0",
+  "description": "Are you ready to get stuck into some Typescript? For this challenge, you are required to code along with the lecturer from this lesson:  Couch Surfing Website",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
