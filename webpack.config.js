@@ -2,12 +2,9 @@ module.exports = {
   "output": {
     "filename": "[name].pack.js"
   },
-  "entry": {
-    "index": "./index"
-  },
   "resolve": {
     "extensions": [
-      ".ts",
+      "ts",
       ".js",
       ".json"
     ],
@@ -27,4 +24,4 @@ module.exports = {
   "entry": {
     "index": "./index"
   }
-};
+}

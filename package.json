@@ -1,18 +1,16 @@
 {
-  "name": "marsch561_fto2401_b_marcelschoombee_djs09",
-  "version": "1.0.0",
-  "description": "Are you ready to get stuck into some Typescript? For this challenge, you are required to code along with the lecturer from this lesson:  Couch Surfing Website",
-  "main": "webpack.config.js",
+  "name": "MARSCH561_FTO2401_B_MarcelSchoombee_DJS09",
+  "description": "https://v2.scrimba.com/learn-typescript-c0l/~01c",
   "scripts": {
     "watch": "webpack -w",
     "build": "webpack"
   },
   "dependencies": {
-    "webpack": "^5.91.0"
+    "webpack": "^5.92.0"
   },
   "devDependencies": {
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.4.5",
+    "ts-loader": "*",
+    "typescript": "*",
     "webpack-cli": "^5.1.4"
   }
 }
